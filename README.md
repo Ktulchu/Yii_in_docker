@@ -43,7 +43,9 @@ To change the host name, replace the server_name task.local line in the file doc
 ```
 127.0.0.1 hostname
 ```
-
+```shell
+docker-compose restart nginx
+```
 
 Now you can open your app via:
 
