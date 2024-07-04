@@ -18,23 +18,32 @@ cd docker-yii2
 ```
 
 Application
+--------------------
 the public part is located in the site folder
 to change, replace the root string in the file docker/nginx/etc/vhost.conf
---------------------
+```
 root /app/path/file/index.php;
+```
 
 make sure that the file exists at the specified path
+
 
 ```shell
 docker-compose restart nginx
 ```
 
+Change Local host hame
+--------------------
+
 Default localhost: http://task.local/
-To change the host name, replace the server_name task.local line in the file; and write it to /etc/hosts
+To change the host name, replace the server_name task.local line in the file docker/nginx/etc/vhost.conf and write it to /etc/hosts
+
+
 
 ```
 127.0.0.1 hostname
 ```
+
 
 Now you can open your app via:
 
