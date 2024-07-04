@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#fix ошибки Psgrage
+rm -rf ./docker/data/*
+
 # Запускаем PHP и устанавливаем Yii2
 docker compose run --rm php composer cr
 
