@@ -1,13 +1,5 @@
 <?php
-require __DIR__ .'/../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-echo '<pre>';
-print_r($_ENV);
-echo '</pre>';
-die;
 return [
     'class' => \yii\db\Connection::class,
     'dsn' => "pgsql:host={$_ENV['POSTGRES_HOST']};port=5432;dbname={$_ENV['POSTGRES_DB']}",

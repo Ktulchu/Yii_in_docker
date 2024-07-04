@@ -10,6 +10,8 @@ if [ $? -eq 0 ]; then
 
     # проверяем запуск контейнеров
     if [ $? -eq 0 ]; then
+        # добавляем библиотеку
+        docker composer require vlucas/phpdotenv
         # По завершению запускаем миграции
         docker compose run --rm php php yii migrate
     else

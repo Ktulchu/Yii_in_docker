@@ -19,7 +19,6 @@ Thumbs.db
 
 # composer vendor dir
 /vendor
-/docker/data
 
 # composer itself is not needed
 composer.phar
